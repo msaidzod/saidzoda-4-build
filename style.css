@@ -229,3 +229,17 @@ footer {
     height: 240px;
   }
 }
+/* Keyboard accessibility */
+
+a:focus-visible {
+  outline: 3px solid #ffdb70;
+  outline-offset: 4px;
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
